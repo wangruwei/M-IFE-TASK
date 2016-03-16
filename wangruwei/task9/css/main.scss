@@ -1,0 +1,17 @@
+﻿@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/functions";
+
+@import "base/reset";
+@import "base/common";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/popup";
+
+@import "pages/home";
+@import "pages/people";
+
+
