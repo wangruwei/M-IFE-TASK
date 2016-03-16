@@ -16,3 +16,8 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default',['sass', 'watch']);
+
+livereload = require('livereload');
+server = livereload.createServer();
+server.watch(__dirname + "/app");
+console.log('livereload start');
