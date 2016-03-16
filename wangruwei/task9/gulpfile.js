@@ -19,5 +19,5 @@ gulp.task('default',['sass', 'watch']);
 
 livereload = require('livereload');
 server = livereload.createServer();
-server.watch(__dirname + "/app");
+server.watch(__dirname);
 console.log('livereload start');

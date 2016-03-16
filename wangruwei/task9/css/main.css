@@ -35,7 +35,7 @@ img {
   border: none; }
 
 body {
-  background-color: #eff2f6;
+  background-color: #eeeeed;
   color: #383a4c;
   height: auto;
   min-height: 100%;
@@ -56,8 +56,144 @@ body {
 .w100 {
   width: 100%; }
 
-#header {
-  color: red; }
+.header-wrapper {
+  height: 56px;
+  background: #2189bf;
+  min-width: 1280px; }
+  .header-wrapper .header {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto; }
+  .header-wrapper .header-logo {
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background: url(../img/logo.png) no-repeat; }
+  .header-wrapper .header-search input {
+    width: 272px;
+    height: 28px;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    float: right;
+    margin-top: 14px;
+    padding-left: 40px;
+    background: url(../img/search.png) no-repeat 17px center #fff;
+    line-height: 28px; }
+  .header-wrapper .header-login {
+    float: right;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 12px;
+    background: url(../img/login.png) no-repeat;
+    margin-top: 20px;
+    margin-left: 20px; }
+    .header-wrapper .header-login a {
+      color: #fff;
+      font-size: 12px; }
+
+.sidebar {
+  width: 260px;
+  float: left;
+  background: #2a2e3d;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px; }
+  .sidebar .personal-center {
+    height: 132px;
+    padding-top: 18px;
+    padding-left: 45px;
+    background: #2b2e3d; }
+  .sidebar .personal-info {
+    margin-bottom: 20px;
+    height: 57px; }
+  .sidebar .personal-icon {
+    float: left;
+    width: 47px;
+    height: 47px;
+    border: 2px solid #bababe;
+    border-radius: 50%;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: 0; }
+    .sidebar .personal-icon .icon-bg {
+      width: 47px;
+      height: 47px;
+      background: #b9babd;
+      display: inline-block;
+      border-radius: 50%;
+      visibility: middle; }
+  .sidebar .personal-name {
+    float: left;
+    color: #f6f5f5;
+    font-size: 12px;
+    padding-left: 18px;
+    line-height: 57px; }
+  .sidebar .personal-social {
+    height: 51px;
+    padding-top: 4px;
+    overflow: hidden; }
+    .sidebar .personal-social .social-list {
+      padding: 0 18px;
+      float: left;
+      border-left: 2px solid #333647;
+      margin-left: -2px; }
+      .sidebar .personal-social .social-list a {
+        display: block;
+        color: #67778b;
+        font-size: 12px;
+        text-align: center;
+        line-height: 15px; }
+  .sidebar .side-nav .nav-list .list-lv1 {
+    padding-left: 45px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px; }
+    .sidebar .side-nav .nav-list .list-lv1 > a {
+      height: 45px;
+      color: #6e8095;
+      padding-left: 35px;
+      display: block;
+      background: url(../img/star.png) no-repeat left center; }
+    .sidebar .side-nav .nav-list .list-lv1.on {
+      height: auto;
+      background: #383d4e; }
+      .sidebar .side-nav .nav-list .list-lv1.on > a {
+        color: #fff; }
+  .sidebar .side-nav .nav-list .ul-lv2 {
+    padding-left: 22px; }
+  .sidebar .side-nav .nav-list .list-lv2 {
+    line-height: 12px;
+    padding-bottom: 12px;
+    color: #6e8095;
+    padding-left: 18px;
+    background: url(../img/arrowright.png) no-repeat left top; }
+    .sidebar .side-nav .nav-list .list-lv2 > a {
+      line-height: 12px;
+      color: #6e8095;
+      display: block;
+      padding-left: 16px;
+      background: url(../img/folder.png) no-repeat left center; }
+    .sidebar .side-nav .nav-list .list-lv2.on {
+      background: url(../img/arrowdown.png) no-repeat left top;
+      margin: 6px 0; }
+      .sidebar .side-nav .nav-list .list-lv2.on > a {
+        color: #fff;
+        background: url(../img/folder-light.png) no-repeat left center; }
+  .sidebar .side-nav .nav-list .list-lv3 {
+    padding-top: 16px;
+    margin-left: 15px;
+    padding-left: 15px;
+    background: url(../img/doc.png) no-repeat left bottom; }
+    .sidebar .side-nav .nav-list .list-lv3 > a {
+      color: #6e8095; }
+    .sidebar .side-nav .nav-list .list-lv3.on {
+      background: url(../img/doc-light.png) no-repeat left bottom; }
+      .sidebar .side-nav .nav-list .list-lv3.on > a {
+        color: #fff; }
 
 /*popup-module*/
 div.jqifade {
@@ -153,8 +289,17 @@ div.jqi {
     div.jqi .jqidefaultbutton:hover {
       background: #52b4fb; }
 
-.header {
-  width: 2.5rem; }
+.main {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.content {
+  float: left;
+  width: 1020px;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+  background: deepskyblue; }
 
 
 
