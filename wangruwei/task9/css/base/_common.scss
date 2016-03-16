@@ -23,7 +23,8 @@ body{
 .w100 {
 	width: 100%;
 }
-
+.clearfix:after{ display:block; content:''; clear:both;}
+.clearfix{ zoom:1;}
 
 //通用UI
 

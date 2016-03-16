@@ -4,6 +4,45 @@
 	<meta charset="UTF-8">
 	<title>task9</title>
 	<link rel="stylesheet" href="css/main.css">
+	<script>
+	'use strict';
+	window.onload = function(){
+		;(function(){
+			var aSelect = document.getElementsByClassName('row-cont');
+			for(var i=0;i<aSelect.length;i++){
+				aSelect[i].bOk = false;
+				aSelect[i].onclick = function(){
+					var oDefault = this.getElementsByClassName('default-tit')[0];
+					var oBox = this.getElementsByClassName('options-list')[0];
+					if(this.bOk){
+						oBox.style.display = 'none';
+						this.bOk = false;
+					}else{
+						oBox.style.display = 'block';
+						this.bOk = true;
+					}
+					var aOptions = this.getElementsByTagName('li');
+					for(var i=0;i<aOptions.length;i++){
+						aOptions[i].onclick = function(){
+							oDefault.innerHTML = this.innerHTML;
+						};
+					}
+				};
+			}
+		})();
+		;(function(){
+			var oChange = document.getElementById('change');
+			oChange.onclick = function(){
+				var oBox = oChange.parentNode;
+				var oInput1 = oBox.getElementsByClassName('default-tit')[0];
+				var oInput2 = oBox.getElementsByClassName('default-tit')[1];
+				var tmp = oInput1.innerHTML;
+				oInput1.innerHTML = oInput2.innerHTML;
+				oInput2.innerHTML = tmp;
+			};
+		})();
+	};
+	</script>
 </head>
 <body>
 	<!-- header start -->
@@ -92,7 +131,151 @@
 				</ul>
 			</div>
 		</div>
-		<div class="content"></div>
+
+		<div class="content">
+			<div class="breadcrumbs clearfix">
+				<a href="javascript:;" class="crumbs">C站</a>
+				<span class="crumbs-bar">/</span>
+				<a href="javascript:;" class="crumbs">个人报表</a>
+				<span class="crumbs-bar">/</span>
+				<a href="javascript:;" class="crumbs">文件一</a>
+				<span class="crumbs-bar">/</span>
+				<a href="javascript:;" class="crumbs on">文档一</a>
+			</div>
+			<div class="content-box">
+				<div class="search-box clearfix">
+					<div class="search-column col1">
+						<div class="search-row clearfix">
+							<span class="row-tit">查询项</span>
+							<div class="row-cont">
+								<i class="show-icon"></i>
+								<span class="default-tit">第一项</span>
+								<ul class="options-list">
+									<li class="option">第一项</li>
+									<li class="option">第二项</li>
+									<li class="option">第三项</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search-column col2">
+						<div class="search-row clearfix">
+							<span class="row-tit">买方</span>
+							<div class="row-cont">
+								<i class="show-icon"></i>
+								<span class="default-tit">小A</span>
+								<ul class="options-list">
+									<li class="option">小A</li>
+									<li class="option">小B</li>
+									<li class="option">小C</li>
+								</ul>
+							</div>
+						</div>
+						<div class="search-row clearfix">
+							<span class="row-tit">卖方</span>
+							<div class="row-cont">
+								<i class="show-icon"></i>
+								<span class="default-tit">小C</span>
+								<ul class="options-list">
+									<li class="option">小A</li>
+									<li class="option">小B</li>
+									<li class="option">小C</li>
+								</ul>
+							</div>
+						</div>
+						<a href="javascript:;" class="change-value" id="change"></a>
+					</div>
+					<div class="search-column col3">
+						<div class="search-row clearfix">
+							<span class="row-tit">日期</span>
+							<input type="date" class="row-cont big" value="2016-04-01" />
+							<span class="row-tit">总耗时</span>
+							<div class="row-cont">
+								<i class="show-icon"></i>
+								<span class="default-tit">8天</span>
+								<ul class="options-list">
+									<li class="option">6天</li>
+									<li class="option">7天</li>
+									<li class="option">8天</li>
+								</ul>
+							</div>
+						</div>
+						<div class="search-row clearfix">
+							<span class="row-tit">人数</span>
+							<div class="row-cont">
+								<i class="show-icon"></i>
+								<span class="default-tit">10人</span>
+								<ul class="options-list">
+									<li class="option">8人</li>
+									<li class="option">9人</li>
+									<li class="option">10人</li>
+								</ul>
+							</div>
+							<span class="row-tit">成交项</span>
+							<div class="row-cont big">
+								<i class="show-icon"></i>
+								<span class="default-tit">10项</span>
+								<ul class="options-list">
+									<li class="option">8项</li>
+									<li class="option">9项</li>
+									<li class="option">10项</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="search-btn">
+						<input type="button" value="搜索" />
+					</div>
+				</div>
+
+				<div class="history-search clearfix">
+					<span class="swiper-btn left"></span>
+					<ul class="timeline clearfix">
+						<li class="time-bar on">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+						<li class="time-bar">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+						<li class="time-bar">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+						<li class="time-bar">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+						<li class="time-bar">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+						<li class="time-bar">
+							<p class="clock-time">11:00 am</p>
+							<p class="money"><i class="money-icon">￥</i>1300</p>
+						</li>
+					</ul>
+					<span class="swiper-btn right"></span>
+					<a href="javascript:;" class="search-btn">历史查询</a>
+				</div>
+
+				<div class="statistics">
+					<h3 class="stat-tit">2016年4月份统计</h3>
+					<ul class="stat-list">
+						<li class="stat-data">
+							<a href="javascript:;" class="stat-link clearfix">
+								<div class="link-data">
+									<p>113331</p>
+									<p>成交量</p>
+								</div>
+								<div class="line-block"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- main end -->
 </body>
