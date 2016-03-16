@@ -562,6 +562,7 @@ body {
 }
 
 .footer {
+    min-width: 1280px;
     height: 266px;
     padding-top: 92px;
     background: #32363e;
@@ -624,6 +625,7 @@ body {
     background: url(../img/earth.png) no-repeat;
 }
 .footer-bot {
+    min-width: 1280px;
     height: 58px;
     background: #2f3038;
 }
