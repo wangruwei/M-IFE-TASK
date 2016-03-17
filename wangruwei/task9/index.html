@@ -41,6 +41,17 @@
 				oInput2.innerHTML = tmp;
 			};
 		})();
+		;(function(){
+			var aBtn = document.getElementsByClassName('tag-btn');
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].onclick = function(){
+					for(var i=0;i<aBtn.length;i++){
+						aBtn[i].className = 'tag-btn';
+					}
+					this.className = 'tag-btn on';
+				};
+			}
+		})();
 	};
 	</script>
 </head>
@@ -303,7 +314,307 @@
 				</div>
 
 				<div class="detail-data clearfix">
-					<div class="material-columns"></div>
+					<div class="columns material">
+						<h2>第一组项目</h2>
+						<div class="columns-cont">
+							<ul class="material-tags clearfix">
+								<li class="tag-btn on">
+									<label for="project1">项目一</label>
+								</li>
+								<li class="tag-btn">
+									<label for="project2">项目二</label>
+								</li>
+								<li class="tag-btn">
+									<label for="project3">项目三</label>
+								</li>
+								<li class="tag-btn">
+									<label for="project4">项目四</label>
+								</li>
+								<li class="tag-btn">
+									<label for="project5">项目五</label>
+								</li>
+							</ul>
+							<ul class="material-box clearfix">
+								<li class="material-list">
+									<input type="radio" name="project" id="project1" checked/>
+									<div class="project-cont">
+										<table>
+											<tbody>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+												<tr>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+													<td>购买材料一</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li class="material-list">
+									<input type="radio" name="project" id="project2" />
+									<div class="project-cont">
+										<table>
+											<tbody>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+												<tr>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+													<td>购买材料二</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li class="material-list">
+									<input type="radio" name="project" id="project3" />
+									<div class="project-cont">
+										<table>
+											<tbody>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+												<tr>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+													<td>购买材料三</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li class="material-list">
+									<input type="radio" name="project" id="project4" />
+									<div class="project-cont">
+										<table>
+											<tbody>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+												<tr>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+													<td>购买材料四</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+								<li class="material-list">
+									<input type="radio" name="project" id="project5" />
+									<div class="project-cont">
+										<table>
+											<tbody>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+												<tr>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+													<td>购买材料五</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="columns table">
+						<h2>第一组项目</h2>
+						<div class="table-box">
+							<div class="table-tit">
+								<p class="sml-tag">标题</p>
+								<p class="sml-tit">项目报表三</p>
+							</div>
+							<div class="table-desc clearfix">
+								<div class="desc-price">
+									<p class="sml-tag">价格</p>
+									<p class="sml-tit">￥158</p>
+								</div>
+								<div class="desc-name">
+									<p class="sml-tag">负责人</p>
+									<p class="sml-tit">小A</p>
+								</div>
+							</div>
+							<div class="table-detail">
+								<p class="sml-tag">详细描述</p>
+								<p class="sml-tit">该项目目前负责人是......</p>
+							</div>
+							<div class="table-search clearfix">
+								<p class="apply"><span class="checkbox check"></span>遵守保密协定</p>
+								<input type="button" value="搜索" class="search-btn" />
+							</div>
+						</div>
+					</div>
+
+					<div class="columns date">
+						<h2>第一组项目</h2>
+					</div>
+
+					<div class="columns rank">
+						<h2>汽车行业品牌榜</h2>
+						<table class="rank-table">
+							<thead>
+								<tr>
+									<th>排名</th>
+									<th>品牌</th>
+									<th>搜索指数</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td>48912001</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
