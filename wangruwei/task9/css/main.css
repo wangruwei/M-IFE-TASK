@@ -319,7 +319,10 @@ div.jqi {
 .main {
   width: 1280px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 0; }
 
 .content {
   float: left;
