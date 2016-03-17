@@ -2,6 +2,10 @@
 	height: 56px;
 	background: #2189bf;
 	min-width: 1280px;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 10;
 	.header {
 		width: 1280px;
 		height: 100%;

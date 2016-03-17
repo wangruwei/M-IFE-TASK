@@ -67,7 +67,11 @@ body {
 .header-wrapper {
   height: 56px;
   background: #2189bf;
-  min-width: 1280px; }
+  min-width: 1280px;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 10; }
   .header-wrapper .header {
     width: 1280px;
     height: 100%;
@@ -102,12 +106,27 @@ body {
       color: #fff;
       font-size: 12px; }
 
+.sidebar-bg {
+  width: 1280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -640px; }
+  .sidebar-bg .bg-bar {
+    background: #2a2e3d;
+    width: 260px;
+    height: 100%; }
+
 .sidebar {
   width: 260px;
   float: left;
   background: #2a2e3d;
   padding-bottom: 2000px;
-  margin-bottom: -2000px; }
+  margin-bottom: -2000px;
+  position: relative;
+  left: 0;
+  top: 0; }
   .sidebar .personal-center {
     height: 132px;
     padding-top: 18px;
@@ -306,7 +325,8 @@ div.jqi {
   float: left;
   width: 1020px;
   padding-bottom: 2000px;
-  margin-bottom: -2000px; }
+  margin-bottom: -2000px;
+  background: #eeeeed; }
   .content .breadcrumbs {
     height: 30px;
     background: #fff;
@@ -681,6 +701,110 @@ div.jqi {
     .content .content-box .detail-data .columns.date {
       width: 350px;
       height: 355px; }
+      .content .content-box .detail-data .columns.date .data-handler {
+        padding-left: 20px;
+        margin-bottom: 10px; }
+      .content .content-box .detail-data .columns.date .date-table {
+        width: 310px;
+        margin-left: 20px; }
+        .content .content-box .detail-data .columns.date .date-table.head {
+          border-top: 1px solid #a9cfec;
+          border-bottom: 1px solid #e1e1e2; }
+        .content .content-box .detail-data .columns.date .date-table thead th {
+          height: 29px;
+          font-weight: normal;
+          border-collapse: collapse; }
+        .content .content-box .detail-data .columns.date .date-table .mid-bar {
+          width: 100%;
+          height: 1px;
+          display: block;
+          border-top: 1px solid #e1e1e2; }
+        .content .content-box .detail-data .columns.date .date-table tbody td {
+          text-align: center;
+          width: 39px;
+          height: 39px;
+          font-size: 12px;
+          border: 1px solid transparent; }
+          .content .content-box .detail-data .columns.date .date-table tbody td:hover {
+            border: 1px solid #f4c21d; }
+          .content .content-box .detail-data .columns.date .date-table tbody td p {
+            margin-top: 5px; }
+            .content .content-box .detail-data .columns.date .date-table tbody td p.holiday {
+              color: #cd3539; }
+          .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(5), .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(6), .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(7) {
+            color: #cd3539; }
+            .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(5) > p, .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(6) > p, .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(7) > p {
+              color: #494949; }
+              .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(5) > p.holiday, .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(6) > p.holiday, .content .content-box .detail-data .columns.date .date-table tbody td:nth-child(7) > p.holiday {
+                color: #cd3539; }
+      .content .content-box .detail-data .columns.date .date-today {
+        width: 60px;
+        height: 18px;
+        float: left;
+        border: none;
+        box-sizing: content-box;
+        background: #fff;
+        border: 1px solid #c4c5c5;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        cursor: pointer; }
+      .content .content-box .detail-data .columns.date .row-cont {
+        float: left;
+        width: 68px;
+        height: 23px;
+        border: 1px solid #c3c3c4;
+        line-height: 20px;
+        font-size: 12px;
+        color: #323333;
+        cursor: default;
+        position: relative;
+        left: 0;
+        top: 0; }
+        .content .content-box .detail-data .columns.date .row-cont .options-list {
+          top: 20px; }
+        .content .content-box .detail-data .columns.date .row-cont.year {
+          width: 62px;
+          height: 20px;
+          text-indent: 2px;
+          margin-right: 6px; }
+          .content .content-box .detail-data .columns.date .row-cont.year .options-list li {
+            padding-left: 0; }
+        .content .content-box .detail-data .columns.date .row-cont.month {
+          width: 83px;
+          height: 20px;
+          text-indent: 18px;
+          margin-right: 6px; }
+          .content .content-box .detail-data .columns.date .row-cont.month .options-list li {
+            padding-left: 0; }
+        .content .content-box .detail-data .columns.date .row-cont.day {
+          width: 73px;
+          height: 20px;
+          text-indent: 4px;
+          margin-right: 6px; }
+          .content .content-box .detail-data .columns.date .row-cont.day .options-list li {
+            padding-left: 0; }
+        .content .content-box .detail-data .columns.date .row-cont .show-icon {
+          width: 19px;
+          height: 20px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: url(../img/select-down3.png) no-repeat right; }
+      .content .content-box .detail-data .columns.date .options-list {
+        width: 100%;
+        position: absolute;
+        left: -1px;
+        top: 24px;
+        background: #fff;
+        border: 1px solid #c3c3c4;
+        border-top: none;
+        line-height: 23px;
+        display: none;
+        z-index: 100; }
+        .content .content-box .detail-data .columns.date .options-list .option {
+          padding-left: 10px; }
+          .content .content-box .detail-data .columns.date .options-list .option:hover {
+            background: deepskyblue;
+            color: #fff; }
     .content .content-box .detail-data .columns.rank {
       width: 530px;
       height: 355px;
@@ -691,12 +815,42 @@ div.jqi {
         border: 1px solid #cacbcb;
         width: 448px;
         text-align: center;
-        border: 1px solid #c3c4c4;
-        border-collapse: collapse; }
+        border-collapse: collapse;
+        border-radius: 2px; }
         .content .content-box .detail-data .columns.rank .rank-table th, .content .content-box .detail-data .columns.rank .rank-table td {
           line-height: 26px;
           border: 1px solid #c3c4c4; }
+        .content .content-box .detail-data .columns.rank .rank-table tbody tr:hover {
+          background: #f4f5f6; }
+        .content .content-box .detail-data .columns.rank .rank-table .rank-scale {
+          text-align: left;
+          text-indent: 30px; }
+        .content .content-box .detail-data .columns.rank .rank-table .rank-bar {
+          text-align: left; }
+          .content .content-box .detail-data .columns.rank .rank-table .rank-bar .bar-num {
+            margin-left: 26px;
+            margin-right: 20px;
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            color: #323333; }
+          .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar {
+            float: left;
+            width: 168px;
+            height: 4px;
+            background: #dcdcdc;
+            display: inline-block;
+            margin-top: 12px; }
+            .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar .sub-bar {
+              height: 100%;
+              display: block; }
+              .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar .sub-bar.red {
+                background: #ed6e52; }
+              .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar .sub-bar.red2 {
+                background: #ef8150; }
+              .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar .sub-bar.red3 {
+                background: #f29f4f; }
+              .content .content-box .detail-data .columns.rank .rank-table .rank-bar .full-bar .sub-bar.blue {
+                background: #7ecaf0; }
 
-
-
-/*# sourceMappingURL=maps/main.css.map */
+/*# sourceMappingURL=main.css.map */
