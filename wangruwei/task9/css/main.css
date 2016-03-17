@@ -334,7 +334,8 @@ div.jqi {
       height: 70px;
       background: #fff;
       border: 1px solid #dddfe1;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
     .content .content-box .search-btn input {
       float: left;
       width: 51px;
@@ -427,7 +428,8 @@ div.jqi {
         width: 29px;
         height: 64px;
         border: 1px solid #dadcde;
-        cursor: pointer; }
+        cursor: pointer;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
         .content .content-box .history-search .swiper-btn.left {
           background: url(../img/swiper-left.png) no-repeat center #fff;
           margin-right: 2px; }
@@ -448,7 +450,8 @@ div.jqi {
           position: relative;
           left: 0;
           top: 0;
-          cursor: pointer; }
+          cursor: pointer;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
           .content .content-box .history-search .timeline .time-bar.on:before, .content .content-box .history-search .timeline .time-bar:hover:before {
             width: 111px;
             height: 3px;
@@ -479,27 +482,55 @@ div.jqi {
         margin-left: 4px;
         cursor: pointer;
         color: #535353;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
         background: url(../img/search-date.png) no-repeat 20px center #fff; }
     .content .content-box .statistics .stat-tit {
       font-size: 12px;
-      line-height: 18px;
+      line-height: 22px;
+      text-indent: 2px;
       color: #323333;
       font-weight: normal; }
     .content .content-box .statistics .stat-list {
-      height: 72px; }
+      height: 72px;
+      margin-right: -30px; }
       .content .content-box .statistics .stat-list .stat-data {
+        float: left;
+        margin-right: 28px;
         width: 200px;
         height: 70px;
         background: #fff;
-        border: 1px solid #d3d4d7; }
+        border: 1px solid #d3d4d7;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
         .content .content-box .statistics .stat-list .stat-data .stat-link {
           display: block;
-          height: 100%;
-          border-left: 3px solid #43b29d; }
-        .content .content-box .statistics .stat-list .stat-data .link-data {
-          float: left; }
-        .content .content-box .statistics .stat-list .stat-data .link-block {
-          float: left; }
+          height: 100%; }
+          .content .content-box .statistics .stat-list .stat-data .stat-link .link-data {
+            float: left;
+            width: 112px;
+            border-left: 3px solid #43b29d;
+            height: 100%;
+            padding-left: 8px; }
+            .content .content-box .statistics .stat-list .stat-data .stat-link .link-data .data-num {
+              color: #323333;
+              font-size: 12px;
+              margin: 20px 0 10px; }
+            .content .content-box .statistics .stat-list .stat-data .stat-link .link-data .data-name {
+              color: #aaaaaa;
+              font-size: 10px; }
+          .content .content-box .statistics .stat-list .stat-data .stat-link .link-block {
+            float: left;
+            width: 61px;
+            height: 47px;
+            margin-top: 12px;
+            background: #43b29e; }
+        .content .content-box .statistics .stat-list .stat-data .stat-link.blue .link-data {
+          border-color: #388ac1; }
+        .content .content-box .statistics .stat-list .stat-data .stat-link.blue .link-block {
+          background: #388ac1; }
+        .content .content-box .statistics .stat-list .stat-data .stat-link.yellow .link-data {
+          border-color: #e2cd47; }
+        .content .content-box .statistics .stat-list .stat-data .stat-link.yellow .link-block {
+          background: #e2cd47; }
 
 
 
